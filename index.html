@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>AutoBazar</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="#"><img src="images/logos.png" alt="logo" /></a>
+          </div>
+          </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="http://localhost:63342/osobniauta/index5.html?_ijt=g3f2c51javcrolnt7uh944mflg">Osobní auta</a></li>
+            <li><a href="#">Dodávky</a></li>
+          <li><a href="#">SUV</a></li>
+          <li><a href="#">Kombi</a></li>
+          <li><a href="#ostatní služby">Ostatní služby</a></li>
+          <li><a href="#kontakty">Kontakty</a></li>
+          <li><a href="#login" onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</a></li>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>Bazar, který prodává auta a pomáhá lidem ohledně aut</h1>
+        </div>
+      </div>
+    </header>
+    <div id="login" class="modal">  
+      <form class="modal-content animate" method="post">
+        <div class="kontejner">
+            <h1>Přihlásit se</h1>
+          <label for="uname"><b>Firstname</b></label>
+          <input type="text" placeholder="Enter Firstrname" id="uname" name="uname" required>
+          
+          <label for="sname"><b>Secondname</b></label>
+          <input type="text" placeholder="Enter Secondrname" id="sname" name="sname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="kontejner" style="background-color:#ffffff">
+          <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw"> <a href="#">Forgot password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <section class="section about has-before" aria-labelledby="about-label">
+        <div class="contain">
+            <figure class="about-banner">
+                <img src="images/about-banner.png" width="540" height="540" loading="lazy"
+                     alt="vehicle repire equipments" class="w-100">
+            </figure>
+            <div class="about-content">
+                <p class="section-subtitle :dark">About Us</p>
+                <h2 class="h2 section-title">We’re Commited to Meet the quality</h2>
+                <p class="section-text">
+                    Quis autem vel eum iure reprehenderit qui in ea volu velit esse quam nihil molestiae consequatur, vel
+                    illum eui dolorem eum fugiat ruo.
+                </p>
+                <p class="section-text">
+                    Reprehenderit qui in ea volu velit esse quam nihil moe stiae consequatur, vel illum eui.
+                </p>
+                <ul class="about-list">
+                    <li class="about-item">
+                        <p>
+                            <strong class="display-1 strong">8K+</strong> Happy Clients
+                        </p>
+                    </li>
+                    <li class="about-item">
+                        <p>
+                            <strong class="display-1 strong">22+</strong> Instruments
+                        </p>
+                    </li>
+                    <li class="about-item">
+                        <p>
+                            <strong class="display-1 strong">50+</strong> Years in market
+                        </p>
+                    </li>
+                    <li class="about-item">
+                        <p>
+                            <strong class="display-1 strong">99%</strong> Projects completed
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    <br>
+    <section class="featured" id="ostatní služby">
+        <h1 class="heading"> <span>Ostatní služby</span></h1>
+    </section>
+    <br>
+        <div class="boxy">
+            <i class="fas fa-tools"></i>
+            <h3>Jak fungují motory</h3>
+            <p>Zjistíte že vaše auto potřebuje opravit nebo vyměnit opotřebované díly? Není problém rádi vám pomůžeme.</p>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/x70VqMrXrbs"></iframe>
+            <a href="https://www.autodily-pema.cz/" class="btn"> Zjistit více</a>
+        </div>
+    
+    <div class="boxy">
+        <i class="fas fa-car"></i>
+        <h3>Prodat oejté auto</h3>
+        <p>Chcete prodat ojeté auto a nevíte za kolik? Naši odborníci vám poradí.</p>
+        <iframe width="420" height="345" src="https://www.youtube.com/embed/ESSRdDxOtas"></iframe>
+        <a href="https://www.garaz.cz/clanek/jak-prodat-ojete-auto-zkusit-to-sam-nebo-jit-do-bazaru-21001176" class="btn"> Zjistit více</a>
+    </div>
+     
+    
+        <div class="boxy">
+            <i class="fas fa-gas-pump"></i>
+            <h3>Výměna oleje</h3>
+            <p>Chcete vyměnit olej a nevíte jak? Proto máme stručný návod jak na to.</p>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/Nl0mFkpvAvM"></iframe>
+            <a href="https://www.pneuboss.cz/poradna/clanky/vymena-oleje" class="btn"> Zjistit více</a>
+        </div>
+        
+    
+    
+        <div class="boxy">
+            <i class="fas fa-car-battery"></i>
+            <h3>Výměna baterií</h3>
+            <p>Máte elektromobil a baterie už nejsou nejlepší? Rádi pomůžeme s výměnou.</p>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/0JE-VbmzQzo"></iframe>
+            <a href="https://www.alza.cz/auto/vymena-autobaterie" class="btn"> Zjistit více</a>
+        </div>
+  
+    
+    <section class="featured" id="kontakty">
+    <h2 class="heading"> <span>Kontakty</span></h2>
+    </section>
+
+    <div class="map-container">
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.940068518206!2d17.644019375613723!3d49.220663671383434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47130cb452d7e6e1%3A0x1979c83e3744afee!2zdMWZLiBUb23DocWhZSBCYXRpLCBabMOtbg!5e0!3m2!1scs!2scz!4v1722859820769!5m2!1scs!2scz"
+                allowfullscreen=""
+                loading="lazy">
+        </iframe>
+    </div>
+    
+    <section class="footer">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h4>Odkazy na stránce</h4>
+              <ul class="links">
+                <li><a href="#">Osobní auta</a></li>
+                <li><a href="#">Dodávky</a></li>
+                <li><a href="#">SUV</a></li>
+                <li><a href="#">Kombi</a></li>
+                <li><a href="#ostatní služby">Ostatní služby</a></li>
+                <li><a href="#kontakty">Kontakty</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Otevírací hodiny</h4>
+              <ul class="links">
+                <li><a href="#">Pondělí: 8:00 - 18:00</a></li>
+                <li><a href="#">Úterý: 8:00 - 18:00</a></li>
+                <li><a href="#">Středa: 8:00 - 16:00</a></li>
+                <li><a href="#">Čtvrtek: 8:00 - 18:00</a></li>
+                <li><a href="#">Pátek: 8:00 - 16:00</a></li>
+                <li><a href="#">Sobota/Neděle: Zavřeno</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Kontakty a gmail</h4>
+              <ul class="links">
+                <li><a href="https://www.youtube.com/">Youtube</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="#">Gmail: nadvornik.adam@gmail.com</a></li>
+                <li><a href="https://mail.google.com/">Gmail</a></li>
+              </ul>
+            </div>
+            </div>
+    </section>
+
+    <script src="main.js"></script>
+    </body>
+    </html>
